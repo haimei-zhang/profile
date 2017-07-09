@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="../../../base/reset.css">
+
+  <link rel="stylesheet" href="../../../base/libs/datePicker/skin/WdatePicker.css">
+  <link rel="stylesheet" href="../../../base/common.css">
+
+  <link rel="stylesheet" href="../myExercise.css">
+
+
+  <script src="../../../base/libs/jquery-3.1.0.min.js"></script>
+  <script src="../../../base/libs/datePicker/WdatePicker.js"></script>
+  <script src="../../../base/libs/echarts.common.min.js"></script>
+  <script src="../exerciseData.js"></script>
+  <script src="../myExercise.js"></script>
+
+</head>
+<body>
+
+<div class="page-section">
+  <div class="section-content">
+
+    <div class="page-section-header">
+      <h1>Statistics of Exercise</h1>
+    </div>
+
+    <div class="my-exercise">
+      <div class="my-exercise__content">
+
+        <div class="my-exercise__content__search-box">
+          <input type="text" id="startDate" value="2017-06-09" onfocus="WdatePicker({maxDate:'#F{$dp.$D(\'endDate\')||\'2017-06-15\'}',readOnly:true, minDate: '2017-05-09',isShowToday: false})">
+          <span>to</span>
+          <input type="text" id="endDate" value="2017-06-15" onfocus="WdatePicker({minDate:'#F{$dp.$D(\'startDate\')||\'2017-05-09\'}',readOnly:true, maxDate:'2017-06-15', isShowToday: false})">
+          <input type="button" value="search" id="search">
+        </div>
+
+        <div class="my-exercise__content__show-box" id="barChart"></div>
+        <h3>Who wins?</h3>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+.grid-layout {
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 2px;
+  padding: 4px;
+}
+
+/*
+> 768
+*/
+@media (min-width: 768px) {
+  .grid-layout {
+    max-width: 1200px;
+    grid-template-columns: repeat(4, 25%);
+  }
+}
+
+/*
+<= 768
+> 480
+*/
+@media (min-width: 480px) and (max-width: 767px) {
+  .grid-layout {
+    max-width: 740px;
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+/*
+<= 480
+*/
+@media (max-width: 480px) {
+  .grid-layout {
+    max-width: 460px;
+    grid-template-columns: repeat(1, 100%);
+  }
+}
+
+/*
+cell
+*/
+.grid-layout__cell {
+  position: relative;
+  padding-top: 100%;
+}
+
+.grid-layout__cell__content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

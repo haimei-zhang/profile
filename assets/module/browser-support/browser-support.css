@@ -1,0 +1,25 @@
+.no-cssgrid .page-section,
+.no-flexbox .page-section {
+  display: none;
+}
+
+.browser-help {
+  display: none;
+  text-align: center;
+  margin: 120px 32px 60px;
+}
+
+.browser-help h3 {
+  font-size: 20px;
+  margin: 20px;
+}
+
+.browser-help__went-wrong {
+  margin-top: 60px;
+  width: 320px;
+  height: 320px;
+}
+
+.no-cssgrid .browser-help {
+  display: block;
+}

@@ -1,0 +1,35 @@
+.page-footer {
+  height: 140px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.page-footer__social {
+  text-align: center;
+}
+
+.page-footer__social__item {
+  display: inline-block;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 10px;
+  border: 1px solid #cc9a1e;
+  box-shadow: 0 0 10px 0 #cc9a1e;
+  font-size: 20px;
+  font-weight: bold;
+  color: #e4d0a9;
+  text-decoration: none;
+  transition: 0.3s;
+  margin: 0 20px;
+}
+
+.page-footer__social__item:hover {
+  transform: scale(1.1);
+}
+
+.page-footer__copyright {
+  text-align: center;
+  margin-top: 20px;
+  color: rgba(255, 235, 59, 0.5);
+}

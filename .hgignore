@@ -1,0 +1,24 @@
+syntax: glob
+
+# dependencies
+node_modules/
+
+# testing
+coverage/
+
+# production
+build/
+ws-dist/
+
+# misc
+.DS_Store
+.env
+.tmp
+*.log
+
+# IntelliJ files
+.idea/
+*.iws
+
+# Version Control
+.git

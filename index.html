@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="assets/base/img/favicon.ico">
+
+  <meta name="theme-color" content="#000000">
+  <script src="assets/base/libs/modernizr-css-grid_n_flexbox.js"></script>
+
+  <link rel="stylesheet" href="assets/base/reset.css">
+  <link rel="stylesheet" href="assets/module/browser-support/browser-support.css">
+  <link rel="stylesheet" href="assets/base/libs/datePicker/skin/WdatePicker.css">
+  <link rel="stylesheet" href="assets/base/common.css">
+
+  <link rel="stylesheet" href="assets/module/about/intro/intro.css">
+  <link rel="stylesheet" href="assets/module/skills/grid-layout/grid-layout.css">
+  <link rel="stylesheet" href="assets/module/skills/skill-cell/skill-cell.css">
+  <link rel="stylesheet" href="assets/module/book-shelf/book-shelf/book-shelf.css">
+  <link rel="stylesheet" href="assets/module/my-exercise/my-exercise.css">
+  <link rel="stylesheet" href="assets/module/page-footer/page-footer.css">
+
+  <script src="assets/base/libs/jquery-3.1.0.min.js"></script>
+  <script src="assets/base/libs/datePicker/WdatePicker.js"></script>
+  <script src="assets/base/libs/echarts.common.min.js"></script>
+
+  <script src="assets/module/skills/skill-summary/skill-summary-pattern.js"></script>
+  <script src="assets/module/skills/skill-summary/skill-summary.js"></script>
+  <script src="assets/module/skills/skills-data.js"></script>
+  <script src="assets/module/skills/skills.js"></script>
+  <script src="assets/module/book-shelf/book-shelf/bookshelf-data.js"></script>
+  <script src="assets/module/book-shelf/book-shelf/book-shelf.js"></script>
+  <script src="assets/module/my-exercise/exercise-data.js"></script>
+  <script src="assets/module/my-exercise/my-exercise.js"></script>
+  <script src="assets/module/page-footer/page-footer.js"></script>
+
+  <title>Haimei's Profile</title>
+</head>
+<body>
+
+
+<div class="page-section bg-lightgreen-light">
+  <div class="section-content">
+    <div class="about-myself">
+      <div class="about-myself__face">
+
+        <div class="my-face">
+          <div class="my-face__content">
+            <img src="assets/module/about/intro/profile.jpg" alt="Profile">
+            <h1 class="my-face__content__greeting">Hi, I'm Haimei</h1>
+          </div>
+        </div>
+      </div>
+      <div class="about-myself__details">
+        <div class="about-myself__details__pieChart" id="pieChart"></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-section">
+  <div class="section-content">
+    <div class="page-section-header">
+      <h1>Programming Skills</h1>
+    </div>
+    <p class="page-section__description">These are the software development skills I learned</p>
+    <div class="grid-layout" id="cellList">
+
+    </div>
+  </div>
+</div>
+
+<div class="page-section bg-yellow-light">
+  <div class="section-content">
+
+    <div class="page-section-header">
+      <h1>Books</h1>
+    </div>
+    <p class="page-section__description">I learn software development mostly through self-taught.<br>
+      Apart from picking up skills at work and learning from the Internet, I also read the books below:</p>
+    <div class="book-shelf">
+      <div class="book-shelf__book-case">
+
+        <div class="book-case-box">
+          <div class="book-case-box__content" id="book-case-list"></div>
+        </div>
+
+      </div>
+      <div class="book-shelf__book-details">
+        <div class="book-details-box" id="book-details"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-section">
+  <div class="section-content">
+
+    <div class="page-section-header">
+      <h1>Statistics of Exercise</h1>
+    </div>
+
+    <p class="page-section__description">Competition of sit-ups between Ming and May</p>
+
+    <div class="my-exercise">
+      <div class="my-exercise__content">
+
+        <div class="my-exercise__content__search-box">
+          <input type="text" id="startDate" value="2017-06-09"
+                 onfocus="WdatePicker({maxDate:'#F{$dp.$D(\'endDate\')||\'2017-06-15\'}',readOnly:true, minDate: '2017-05-09',isShowToday: false})">
+          <span>to</span>
+          <input type="text" id="endDate" value="2017-06-15"
+                 onfocus="WdatePicker({minDate:'#F{$dp.$D(\'startDate\')||\'2017-05-09\'}',readOnly:true, maxDate:'2017-06-15', isShowToday: false})">
+          <input type="button" value="Apply" id="search">
+        </div>
+
+        <div class="my-exercise__content__show-box" id="barChart"></div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+<div class="page-section page-footer">
+  <div class="page-footer__social">
+    <a class="page-footer__social__item" href="https://www.linkedin.com/in/haimei-zhang/" target="_blank"
+       title="LinkedIn">IN</a>
+    <a class="page-footer__social__item" href="https://www.facebook.com/profile.php?id=100004722077313"
+       target="_blank" title="Facebook">FB</a>
+  </div>
+  <div class="page-footer__copyright">
+    Copyright © <span current-year></span>. All rights reserved.
+  </div>
+</div>
+
+<div class="browser-help">
+  <h3>Your browser doesn't support Javascript or CSS Grid Layout.
+    Please use a browser like Chrome and enable Javascript.</h3>
+
+  <p>To know which browser supports Css Grid Layout, please click
+    <a href="http://caniuse.com/#search=grid" target="_blank">here</a>.
+  </p>
+
+  <img src="assets/module/browser-support/went-wrong.png" alt="Something went wrong" class="browser-help__went-wrong">
+</div>
+
+
+<noscript>
+  <style type="text/css">
+    .page-section {
+      display: none;
+    }
+
+    .browser-help {
+      display: block;
+    }
+  </style>
+</noscript>
+</body>
+</html>

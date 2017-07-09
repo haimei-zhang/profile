@@ -1,0 +1,147 @@
+/*layout*/
+
+body {
+  background: url("./img/bg.png");
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+input {
+  display: inline-block;
+  height: 28px;
+  padding: 6px 10px;
+  font-size: 14px;
+  line-height: 28px;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.page-section {
+  padding: 40px 0 80px 0;
+}
+
+.section-content {
+  margin: auto;
+  max-width: 1600px;
+}
+
+.page-section-header {
+  height: 120px;
+  font-size: 48px;
+  padding: 20px 20px 60px;
+  text-align: center;
+  text-shadow: 0 3px 35px #ffb400;
+  font-weight: bold;
+  position: relative;
+  color: #ff7800;
+}
+
+.page-section__description {
+  font-size: 20px;
+  margin: 0 0 32px 0;
+  color: rgba(41, 41, 41, 0.6);
+  text-align: center;
+  line-height: 32px;
+}
+
+/*theme*/
+
+.bg-red {
+  background-color: #f44336;
+}
+
+.bg-purple {
+  background-color: #9c27b0;
+}
+
+.bg-indigo {
+  background-color: #3f51b5;
+}
+
+.bg-lightblue {
+  background-color: #03a9f4
+}
+
+.bg-teal {
+  background-color: #009688;
+}
+
+.bg-lightgreen {
+  background-color: #8bc34a;
+}
+
+.bg-yellow {
+  background-color: #ffeb3b;
+}
+
+.bg-orange {
+  background-color: #ff9800;
+}
+
+.bg-brown {
+  background-color: #795548;
+}
+
+.bg-bluegrey {
+  background-color: #607d8b;
+}
+
+.bg-grey {
+  background-color: #9e9e9e;
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+/*
+50%
+---------*/
+.bg-red-light {
+  background-color: rgba(244, 67, 54, 0.25);
+}
+
+.bg-purple-light {
+  background-color: rgba(156, 39, 176, 0.5);
+}
+
+.bg-indigo-light {
+  background-color: rgba(63, 81, 181, 0.5);
+}
+
+.bg-lightblue-light {
+  background-color: rgba(3, 169, 244, 0.51)
+}
+
+.bg-teal-light {
+  background-color: rgba(0, 150, 136, 0.5);
+}
+
+.bg-lightgreen-light {
+  background-color: rgba(128, 255, 59, 0.1);
+}
+
+.bg-yellow-light {
+  background-color: rgba(255, 235, 59, 0.5);
+}
+
+.bg-orange-light {
+  background-color: rgba(255, 152, 0, 0.5);
+}
+
+.bg-brown-light {
+  background-color: rgba(121, 85, 72, 0.5);
+}
+
+.bg-bluegrey-light {
+  background-color: rgba(96, 125, 139, 0.5);
+}
+
+.bg-grey-light {
+  background-color: rgba(158, 158, 158, 0.5);
+}
+
+.bg-black-light {
+  background-color: rgba(0, 0, 0, 0.5);
+}
