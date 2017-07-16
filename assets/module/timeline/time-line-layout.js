@@ -27,6 +27,20 @@ var TimeLineLayout = function () {
       $(this).parents(_attrs.timeLineBox).find(_attrs.boxContent).slideToggle(500);
     });
   };
+
+  this.toggleImg = function() {
+    $(".time-line-box-media__content img").on("click", function() {
+      if ($(this).siblings().length > 0) {
+        $(this).fadeOut(200, function() {
+          if ($(this).next().length > 0) {
+            $(this).next().fadeIn(200);
+          } else {
+            $(this).parents(".time-line-box-media__content").find("img").eq(0).fadeIn(200);
+          }
+        })
+      }
+    });
+  }
 };
 
 
@@ -36,4 +50,5 @@ $(document).ready(function () {
   TIME_LINE_LAYOUT = new TimeLineLayout();
   TIME_LINE_LAYOUT.toggleYear();
   TIME_LINE_LAYOUT.toggleHeader();
+  TIME_LINE_LAYOUT.toggleImg();
 });

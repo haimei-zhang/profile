@@ -1,3 +1,7 @@
+.dsn {
+  display: none;
+}
+
 .time-line-box {
   margin-left: 32px;
   margin-bottom: 20px;
@@ -80,3 +84,4 @@
   max-height: 100%;
   width: 100%;
 }
+
