@@ -22,3 +22,6 @@ ws-dist/
 
 # Version Control
 .git
+
+# project
+resource/cv/

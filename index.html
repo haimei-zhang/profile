@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" href="assets/base/img/favicon.ico">
 
-  <meta name="theme-color" content="#000000">
   <script src="assets/base/libs/modernizr-css-grid_n_flexbox.js"></script>
 
   <link rel="stylesheet" href="assets/base/reset.css">
@@ -33,6 +32,7 @@
   <script src="assets/module/my-exercise/exercise-data.js"></script>
   <script src="assets/module/my-exercise/my-exercise.js"></script>
   <script src="assets/module/page-footer/page-footer.js"></script>
+
 
   <title>Haimei's Profile</title>
 </head>
@@ -108,10 +108,10 @@
 
         <div class="my-exercise__content__search-box">
           <input type="text" id="startDate" value="2017-06-09"
-                 onfocus="WdatePicker({maxDate:'#F{$dp.$D(\'endDate\')||\'2017-06-15\'}',readOnly:true, minDate: '2017-05-09',isShowToday: false})">
+                 onfocus="WdatePicker({el:$dp.$('startDate'),maxDate:'#F{$dp.$D(\'endDate\')||\'2017-06-15\'}',readOnly:true, minDate: '2017-05-09',isShowToday: false})">
           <span>to</span>
           <input type="text" id="endDate" value="2017-06-15"
-                 onfocus="WdatePicker({minDate:'#F{$dp.$D(\'startDate\')||\'2017-05-09\'}',readOnly:true, maxDate:'2017-06-15', isShowToday: false})">
+                 onfocus="WdatePicker({el:$dp.$('endDate'),minDate:'#F{$dp.$D(\'startDate\')||\'2017-05-09\'}',readOnly:true, maxDate:'2017-06-15', isShowToday: false})">
           <input type="button" value="Apply" id="search">
         </div>
 
@@ -135,18 +135,19 @@
   </div>
 </div>
 
+<div class="page-nav">
+  <a href="activities.html" class="page-nav__link">Activities</a>
+</div>
 <div class="browser-help">
   <h3>Your browser doesn't support Javascript or CSS Grid Layout.
     Please use a browser like Chrome and enable Javascript.</h3>
 
-  <p>To know which browser supports Css Grid Layout, please click
+  <p>To know which browser supports CSS Grid Layout, please click
     <a href="http://caniuse.com/#search=grid" target="_blank">here</a>.
   </p>
 
   <img src="assets/module/browser-support/went-wrong.png" alt="Something went wrong" class="browser-help__went-wrong">
 </div>
-
-
 <noscript>
   <style type="text/css">
     .page-section {
@@ -158,5 +159,8 @@
     }
   </style>
 </noscript>
+
+<script src="assets/base/libs/google-track.js"></script>
+
 </body>
 </html>
